@@ -21,4 +21,14 @@ def get_requirements(file_path: str) -> List[str]:
     return requirement_lst
 
 # To use the function, you need to pass the file path
-print(get_requirements)
+print(get_requirements())
+
+setup(
+    name = "NetworkSecurity",
+    author = "Rituraj Singh",
+    version = "0.0.1",
+    autoh_email = "rituraj.singh.met23@itbhu.ac.in",
+    packages  = find_packages(),
+    install_requires = get_requirements(),
+    
+)
